@@ -3,7 +3,7 @@ import argparse
 
 def merge(inps, outs, ranks):
     for inp in inps:
-        for o in outs:
+        for o in outs["golds"]:
             if o['id'] == inp['id']:
                 output = o['output']
                 break
